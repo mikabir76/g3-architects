@@ -63,6 +63,32 @@ body {}
     color: #131313;
     ;
 }
+@media screen and (max-width:576px) {
+    .header{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .row-area{
+        flex-direction: column;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .section-area-container{
+        width:700px;
+    }
+    .section-banner{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+
+}
 
 /* first section */
 .section-area {
@@ -107,7 +133,24 @@ body {}
     gap: 25px;
 
 }
+@media screen and (max-width:576px) {
+    .images{
+        grid-template-columns: 1fr;
+    }
+    .second-section{
+        flex-direction: column;
+        text-align: center;
+    }   
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .images{
+        grid-template-columns: 1fr 1fr;
+    }
+    .second-section{
+        flex-direction: column;
+        text-align: center;
 
+}
 .section-text-area {
     margin-left: 75px;
 }
@@ -194,18 +237,26 @@ body {}
     background-color: #FF900E;
     border-radius: 8px;
     border: none;
-    padding: 45px;
+    padding:45px;
     width: 345px;
     height: 200px;
     color: white;
+    
 
 }
 
 .mid-btn span {
+    
+    
     font-size: 25px;
     font-weight: 500;
 }
-
+@media screen and (max-width:576px) {
+    blogs-area{
+        flex-direction: row-reverse;
+    }
+    
+}
 /* -------------------
  Forth Section Area
  --------------------*/
@@ -307,4 +358,11 @@ body {}
     font-size: 20px;
     color:#424242;
     margin-bottom: 220px;
+}
+@media screen and (max-width:576px;) {
+    .images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }
